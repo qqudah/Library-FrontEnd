@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Navbar } from './layout/NavbarAndFooter/Navbar';
+import { ExploreTopBooks } from './layout/HomePage/components/ExploreTopBooks';
+import { Carousel } from './layout/HomePage/components/Carousel';
+import { Heros } from './layout/HomePage/components/Heros';
+import { LibraryServices } from './layout/HomePage/components/LibraryServices';
+import { Footer } from './layout/NavbarAndFooter/Footer';
+import { HomePage } from './layout/HomePage/HomePage';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HomePage />
+      <Navbar />
+     
+      <Footer />
     </div>
   );
 }
 
-export default App;
+
