@@ -11,9 +11,8 @@ import { HomePage } from './layout/HomePage/HomePage';
 export const App = () => {
   return (
     <div>
-      <HomePage />
       <Navbar />
-     
+      <HomePage />
       <Footer />
     </div>
   );
